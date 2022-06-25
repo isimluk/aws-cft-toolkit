@@ -20,5 +20,4 @@ RUN apt-get update && apt-get install python3-pip -y
 RUN pip install cloudformation-cli cloudformation-cli-python-plugin
 
 RUN useradd --create-home --home-dir /aws/ awsuser
-USER awsuser
 WORKDIR /aws
